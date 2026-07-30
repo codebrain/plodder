@@ -1,0 +1,146 @@
+.data-table {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-height: 0;
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.data-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.data-header h3 {
+  margin: 0;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #1e2a33;
+}
+
+.data-header span {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #6a7a86;
+}
+
+.data-scroll {
+  min-height: 120px;
+  max-height: 280px;
+  overflow: auto;
+  border: 1px solid #d5dde3;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.data-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.75rem;
+}
+
+.data-table th,
+.data-table td {
+  padding: 0.4rem 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid #e8ecef;
+}
+
+.data-table th {
+  position: sticky;
+  top: 0;
+  background: #f0f3f5;
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #6a7a86;
+}
+
+.data-table td:last-child {
+  width: 1.8rem;
+  text-align: center;
+}
+
+.data-table .empty {
+  color: #8a9aa6;
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  font-size: 0.78rem;
+  line-height: 1.4;
+  padding: 0.85rem 0.6rem;
+}
+
+.data-table tbody tr {
+  cursor: pointer;
+}
+
+.data-table tbody tr:hover {
+  background: #f4f8f7;
+}
+
+.data-table tbody tr.selected {
+  background: #e6f3f1;
+}
+
+.data-table tbody tr.selected td:first-child {
+  color: #0f766e;
+  font-weight: 700;
+}
+
+.data-table tbody button {
+  border: none;
+  background: transparent;
+  color: #8a9aa6;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.data-table tbody button:hover {
+  color: #c23b22;
+}
+
+.data-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.btn-delete-selected {
+  border: 1px solid #e0a89c;
+  background: #fff;
+  color: #8a2b1a;
+  border-radius: 6px;
+  padding: 0.3rem 0.55rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-delete-selected:hover:not(:disabled) {
+  background: #fde8e4;
+}
+
+.btn-delete-selected:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.clear-data {
+  border: none;
+  background: none;
+  color: #6a7a86;
+  font-size: 0.72rem;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  padding: 0;
+}
+
+.clear-data:hover {
+  color: #c23b22;
+}

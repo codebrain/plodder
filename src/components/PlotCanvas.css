@@ -1,0 +1,66 @@
+.plot-canvas-wrap {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  min-width: 0;
+  display: grid;
+  place-items: center;
+  background:
+    linear-gradient(180deg, rgba(36, 48, 58, 0.04), transparent 40%),
+    repeating-conic-gradient(from 0deg, #e8ecef 0% 25%, #eef1f3 0% 50%) 0 0 / 18px 18px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.plot-viewport {
+  will-change: transform;
+}
+
+.plot-canvas {
+  display: block;
+  cursor: crosshair;
+  touch-action: none;
+  box-shadow: 0 8px 28px rgba(20, 30, 40, 0.18);
+  background: #fff;
+}
+
+.plot-empty {
+  text-align: center;
+  color: #5a6a76;
+  padding: 2rem;
+}
+
+.plot-empty p {
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #2c3a45;
+}
+
+.plot-empty span {
+  font-size: 0.85rem;
+}
+
+.plot-cursor-tooltip {
+  position: fixed;
+  z-index: 20;
+  pointer-events: none;
+  padding: 0.35rem 0.55rem;
+  border-radius: 8px;
+  border: 1px solid rgba(213, 221, 227, 0.95);
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 4px 14px rgba(20, 30, 40, 0.14);
+  backdrop-filter: blur(8px);
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.75rem;
+  color: #243038;
+  line-height: 1.35;
+  white-space: nowrap;
+}
+
+.plot-cursor-tooltip span {
+  display: inline-block;
+  width: 1rem;
+  color: #6a7a86;
+  font-weight: 700;
+}

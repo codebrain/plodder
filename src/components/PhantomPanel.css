@@ -1,0 +1,144 @@
+.phantom-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  border: 1px solid #d5dde3;
+  border-radius: 10px;
+  padding: 0.85rem 0.9rem;
+  background: #f7f9fa;
+  border-left: 3px solid #6b5b95;
+}
+
+.phantom-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.phantom-header h3 {
+  margin: 0;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #1e2a33;
+}
+
+.phantom-header span {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #6a7a86;
+}
+
+.phantom-hint {
+  margin: 0;
+  font-size: 0.72rem;
+  line-height: 1.35;
+  color: #6a7a86;
+  max-width: 100%;
+}
+
+.phantom-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.btn-sm {
+  border: 1px solid #c9d2d9;
+  background: #fff;
+  color: #3a4a55;
+  border-radius: 6px;
+  padding: 0.3rem 0.55rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-sm:hover:not(:disabled) {
+  border-color: #6b5b95;
+  color: #6b5b95;
+}
+
+.btn-sm:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.phantom-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  max-height: 140px;
+  overflow: auto;
+}
+
+.phantom-list li {
+  display: grid;
+  grid-template-columns: 2rem minmax(0, 1fr) 1.5rem;
+  gap: 0.35rem;
+  align-items: center;
+}
+
+.phantom-list li.phantom-empty {
+  display: block;
+  grid-template-columns: unset;
+}
+
+.phantom-empty {
+  font-size: 0.78rem;
+  color: #8a9aa6;
+  padding: 0.2rem 0;
+  line-height: 1.35;
+}
+
+.phantom-empty span {
+  display: block;
+  width: 100%;
+}
+
+.ph-label {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #6b5b95;
+}
+
+.ph-vals {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.72rem;
+  color: #243038;
+}
+
+.phantom-panel .icon-btn {
+  border: none;
+  background: transparent;
+  color: #8a9aa6;
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 0.15rem;
+}
+
+.phantom-panel .icon-btn:hover {
+  color: #c23b22;
+  background: #fde8e4;
+}
+
+.phantom-panel .text-btn {
+  border: none;
+  background: none;
+  color: #6a7a86;
+  font-size: 0.72rem;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  padding: 0;
+}
+
+.phantom-panel .text-btn:hover {
+  color: #c23b22;
+}

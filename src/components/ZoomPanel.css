@@ -1,0 +1,42 @@
+.zoom-panel {
+  position: absolute;
+  top: 0.65rem;
+  left: 0.65rem;
+  z-index: 5;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0.45rem;
+  padding: 0.4rem;
+  border-radius: 10px;
+  border: 1px solid rgba(213, 221, 227, 0.95);
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 4px 14px rgba(20, 30, 40, 0.12);
+  backdrop-filter: blur(8px);
+  pointer-events: none;
+}
+
+.zoom-loupe {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.zoom-title {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #6a7a86;
+  text-align: center;
+}
+
+.zoom-canvas {
+  width: 140px;
+  height: 140px;
+  border-radius: 8px;
+  border: 1px solid #c9d2d9;
+  background: #1c252d;
+  image-rendering: pixelated;
+  display: block;
+}

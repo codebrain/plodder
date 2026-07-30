@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="14" fill="#1a2744"/>
+  <!-- Dome -->
+  <path d="M14 40c0-12 8-22 18-22s18 10 18 22" fill="#e8eef5"/>
+  <!-- Brim -->
+  <path d="M10 40h44c-2 3-10 5-22 5S12 43 10 40Z" fill="#e8eef5"/>
+  <!-- Badge -->
+  <circle cx="32" cy="30" r="5" fill="#1a2744"/>
+  <path d="M32 26.5l1.1 2.2 2.4.4-1.7 1.7.4 2.4L32 32.1l-2.2 1.1.4-2.4-1.7-1.7 2.4-.4L32 26.5Z" fill="#c9a227"/>
+</svg>
